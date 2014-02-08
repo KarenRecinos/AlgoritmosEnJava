@@ -11,12 +11,14 @@ Dado un numero mayor a cero, imprima el valor actual desde cero hasta antes de l
 public class whileValue {   
 
    public static void main(String[] args) {
-   		int valorActual = 0;
-   		System.out.println(args[0]);
+   		int valorActual;
+                
 
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
-      
-   }
+     valorActual=Integer.parseInt(args[0].toString());
+     
+    for(int i=0;i<valorActual;i++){
 
+  System.out.println("El valor actual es: "+i);
+  }
+ }
 }

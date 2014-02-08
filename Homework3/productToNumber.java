@@ -15,9 +15,21 @@ mostrar
 public class productToNumber {   
 
    public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
+   		
+		int resultado = 1;
+		int valnull = 0;
 
+		valnull=Integer.parseInt(args[0].toString());
+   		System.out.println(args[0]);
+   
+        
+        for(int x=1; x<=valnull;x++)
+        {
+           
+            resultado*=x;
+             
+           
+        }
 
    		System.out.println("el producto es: "+resultado);
       

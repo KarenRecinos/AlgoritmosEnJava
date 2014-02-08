@@ -14,20 +14,38 @@ y si no cumple ninguna de estas condiciones, solo mostrar el valor de ese numero
 public class FlipFlop {   
 
    public static void main(String[] args) {
-   		int numeroActual = 0;
-   		System.out.println(args[0]);
 
-   		// si el numero es divisible dentro de 3 imprima "Flip"
-			System.out.println("Flip");
+                   int numeroActual=0;
+                   int num1=0;
+                
+            numeroActual=Integer.parseInt(args[0].toString());  
 
-   		// si el numero es divisible dentro de 5 imprima "Flop"
-			System.out.println("Flop");
+              while(num1<numeroActual){
+
+	 if ((num1%5==0)&&(num1%3==0)){
 
    		// si el numero es divisible dentro de 3 y 5 imprima "FlipFlop"
 			System.out.println("FlipFlop");
 
-   		// de lo contrario, imprima el numero
-      		System.out.println(numeroActual);
-   }
+  			  }
 
+                else if (num1%3==0){
+
+   		// si el numero es divisible dentro de 5 imprima "Flop"
+			System.out.println("Flip");
+		}
+
+		else if (num1%5==0){
+   		// si el numero es divisible dentro de 3 imprima "Flip"
+			System.out.println("Flop");    
+		}                   
+
+		else{
+   		// de lo contrario, imprima el numero
+      		System.out.println(num1);
+			}
+		num1++;   
+		}
+
+	}
 }
